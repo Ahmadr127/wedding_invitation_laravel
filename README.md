@@ -1,61 +1,218 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Wedding Invitation Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Website undangan pernikahan yang modern, profesional, dan responsif dengan fitur-fitur lengkap.
 
-## About Laravel
+## 🎯 Fitur Utama
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### ✨ Desain & UI/UX
+- **Responsive Design** - Optimal di semua perangkat (desktop, tablet, mobile)
+- **Modern UI** - Menggunakan Tailwind CSS dengan gradien dan animasi yang menarik
+- **Typography** - Font Playfair Display untuk judul dan Poppins untuk body text
+- **Color Scheme** - Kombinasi pink dan purple yang elegan
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🎵 Audio & Animasi
+- **Background Music** - Kontrol musik yang dapat di-toggle
+- **AOS Animations** - Animasi scroll yang smooth dan menarik
+- **Custom Animations** - Floating elements, heartbeat, dan hover effects
+- **Interactive Elements** - Hover effects dan micro-interactions
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 📱 Komponen Utama
 
-## Learning Laravel
+#### 1. Hero Section
+- Countdown timer real-time
+- Floating background elements
+- Call-to-action buttons
+- Smooth scroll navigation
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+#### 2. Couple Section
+- Informasi lengkap kedua mempelai
+- Foto profil dengan border yang menarik
+- Kisah cinta pasangan
+- Informasi keluarga
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+#### 3. Event Details
+- Detail akad nikah dan resepsi
+- Informasi waktu, tempat, dan dress code
+- Fasilitas yang tersedia
+- Link ke Google Maps
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+#### 4. Timeline
+- Timeline acara yang detail
+- Visual timeline dengan gradient
+- Informasi waktu yang jelas
+- Catatan penting untuk tamu
 
-## Laravel Sponsors
+#### 5. Gallery
+- Galeri foto dengan filter kategori
+- Lightbox untuk melihat foto
+- Hover effects yang menarik
+- Kategori: Prewedding, Engagement, Daily
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+#### 6. RSVP Form
+- Form yang interaktif dan user-friendly
+- Validasi input
+- Pilihan kehadiran (Ya/Tidak)
+- Jumlah tamu dengan counter
+- Pilihan acara yang akan dihadiri
+- Statistik RSVP real-time
 
-### Premium Partners
+#### 7. Location
+- Informasi lokasi akad dan resepsi
+- Google Maps integration
+- Informasi transportasi
+- Kontak venue
+- Tab untuk switch antara lokasi
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
+#### 8. Footer
+- Informasi kontak
+- Social media links
+- Quick navigation
+- Countdown timer
+- Back to top button
 
-## Contributing
+## 🛠️ Teknologi yang Digunakan
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **HTML5** - Struktur markup yang semantik
+- **Tailwind CSS** - Framework CSS utility-first
+- **JavaScript (Vanilla)** - Interaktivitas dan animasi
+- **AOS (Animate On Scroll)** - Library animasi scroll
+- **Google Fonts** - Typography yang menarik
+- **Google Maps API** - Integrasi peta
 
-## Code of Conduct
+## 📁 Struktur File
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```
+resources/views/
+├── wedding-invitation.blade.php    # Halaman utama
+└── components/
+    ├── hero-section.blade.php      # Hero section
+    ├── couple-section.blade.php    # Informasi mempelai
+    ├── event-details.blade.php     # Detail acara
+    ├── timeline.blade.php          # Timeline acara
+    ├── gallery.blade.php           # Galeri foto
+    ├── rsvp-form.blade.php         # Form RSVP
+    ├── location.blade.php          # Informasi lokasi
+    └── footer.blade.php            # Footer
+```
 
-## Security Vulnerabilities
+## 🚀 Cara Menjalankan
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1. **Clone repository**
+   ```bash
+   git clone <repository-url>
+   cd weddinginvitation
+   ```
 
-## License
+2. **Install dependencies**
+   ```bash
+   composer install
+   npm install
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+3. **Setup environment**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+4. **Jalankan server**
+   ```bash
+   php artisan serve
+   ```
+
+5. **Akses website**
+   - Buka browser dan kunjungi: `http://localhost:8000/wedding`
+
+## 🎨 Kustomisasi
+
+### Mengubah Informasi Mempelai
+Edit file `resources/views/components/couple-section.blade.php`:
+```php
+<h3 class="font-playfair text-3xl font-bold text-gray-800 mb-2">
+    [Nama Mempelai Pria]
+</h3>
+```
+
+### Mengubah Tanggal Acara
+Edit file `resources/views/wedding-invitation.blade.php`:
+```javascript
+const weddingDate = new Date('2024-12-25T10:00:00').getTime();
+```
+
+### Mengubah Lokasi
+Edit file `resources/views/components/location.blade.php`:
+```php
+<h4 class="font-semibold text-gray-800">[Nama Venue]</h4>
+<p class="text-gray-600">[Alamat Lengkap]</p>
+```
+
+### Mengubah Background Music
+Edit file `resources/views/wedding-invitation.blade.php`:
+```html
+<audio id="bgMusic" loop>
+    <source src="[URL_MUSIK_ANDA]" type="audio/mp3">
+</audio>
+```
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+## 🎯 Fitur Interaktif
+
+### Music Control
+- Toggle play/pause background music
+- Visual feedback dengan animasi rotate
+- Icon yang berubah sesuai status
+
+### Gallery Filter
+- Filter berdasarkan kategori
+- Smooth transitions
+- Lightbox untuk melihat foto
+
+### RSVP Form
+- Dynamic form fields
+- Real-time validation
+- Success notifications
+- Guest counter
+
+### Smooth Scrolling
+- Navigation yang smooth
+- Back to top button
+- Anchor links
+
+## 🔧 Optimasi
+
+### Performance
+- Lazy loading untuk gambar
+- Minified CSS dan JS
+- Optimized images
+- CDN untuk external resources
+
+### SEO
+- Semantic HTML structure
+- Meta tags
+- Open Graph tags
+- Schema markup
+
+### Accessibility
+- ARIA labels
+- Keyboard navigation
+- Screen reader friendly
+- High contrast colors
+
+## 📞 Support
+
+Untuk pertanyaan atau bantuan teknis, silakan hubungi:
+- Email: support@weddinginvitation.com
+- Phone: +62 812-3456-7890
+
+## 📄 License
+
+Proyek ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) untuk detail.
+
+---
+
+**Dibuat dengan ❤️ untuk hari bahagia Anda** 
